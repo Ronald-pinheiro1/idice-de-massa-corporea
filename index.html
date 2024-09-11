@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="imc.css">
+    <title>calculo de indice corporal</title>
+</head>
+<body>
+    <main>
+       <header>
+        <h2>Indice de massa corporal</h2>
+       </header>
+        <section id="entrada">
+            <form action="" method="post">
+
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" title="Digite 
+               seu nome em letras minúsculas." autofocus><br>
+
+                <label for="estatura">Estatura:</label>
+                <input type="number" name="estatura" id="estatura" 
+               title="Informe sua altura">cm<br>
+
+                <label for="massa">Massa:</label>
+                <input type="number" name="massa" id="massa" 
+               title="Informe sua massa,mesmo que peso."> kg<br>
+
+                <input id="relat" type="button" value="Enviar" 
+               onclick="mostrar()" title="Envie o formúlario para ver 
+               seu indice de massa corpôrea.">
+            </form>
+        </section>
+        <section id="saida">
+            <p>Resultado aqui</p>
+        </section>
+        <footer>
+            <p>&copy;Ronald pinherio, Bélem Pará, dezembro de 2023</p>
+        </footer>
+    </main>
+    <script src="imc.js"></script>
+</body>
+</html2
