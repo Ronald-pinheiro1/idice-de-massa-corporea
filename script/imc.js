@@ -5,7 +5,6 @@
 
 
 function mostrar(){
-    
     let nom = String(nome.value)
     let stat =Number(estatura.value)
     let mass = Number(massa.value)
@@ -15,7 +14,7 @@ function mostrar(){
     }
     resp.innerText=""
 
-    return resp.innerHTML+=`<p id="resp_p">Ola, <i>${nom}!</i> seu indice de massa corpoôrea é: <strong><i>${calcular()}</i></strong>, e sua classificação da faxaétaria foi:<strong><i>${faixetaria(calcular())}.</i></strong> Espero ter te deixado satisfeito com esse resultado.</i></p>`
+    return resp.innerHTML+=`<p id="resp_p">Ola, <i>${nom}!</i> seu indice de massa corpoôrea é: <strong><i>${calcular()}</i></strong>, e sua classificação da faxaétaria foi:<strong><i>${faixetaria(calcular())}.</i></strong> Espero ter te deixado satisfeito com esse resultado.</i><input type="button"value="Clique para dicas de saude" value="dicas"></p>`
 }
 
 function calcular(){

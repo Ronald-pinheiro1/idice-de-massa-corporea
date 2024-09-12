@@ -1,0 +1,25 @@
+<!DOCTYPE html >
+<html lang="pt-br" >
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="(larg_altu(elemento))">
+    <footer id="resposta">
+        
+    </footer>
+   <script>
+       let resp = document.getElementById(`resposta`)
+       let elemento= "body"
+
+    function larg_altu(ele){
+        resp.inert=''
+        resp.innerHTML= `<P>${ele}(La:${innerWidth}px x At:${innerHeight}px)</p>`
+        
+    };
+    addEventListener('resize', function(){resp.innerHTML+= ""; larg_altu(elemento)})
+    
+   </script> 
+</body>
+</html>
